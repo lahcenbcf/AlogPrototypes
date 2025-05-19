@@ -1,0 +1,10 @@
+{
+    "/auth/admin/login": "/users?role=admin",
+    "/auth/vendor/login": "/users?role=vendor",
+    
+    "/api/admin/products": "/products",
+    "/api/admin/users": "/users",
+    "/api/admin/orders": "/orders",
+  
+    "/api/vendor/products": "/products"
+  }

@@ -1,0 +1,13 @@
+{
+    "name": "ecommerce-prototype",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "dependencies": {
+        "shared-ui": "*"
+    },
+    "devDependencies": {
+        "json-server": "^0.17.4"
+    }
+}

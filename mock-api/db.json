@@ -1,0 +1,24 @@
+{
+    "products": [
+      { "id": "p1", "name": "Laptop Pro X", "category": "Electronics", "price": 1250, "stock": 45, "vendorId": "v1" },
+      { "id": "p2", "name": "Artisan Coffee Mug", "category": "Kitchenware", "price": 18, "stock": 150, "vendorId": "v2" },
+      { "id": "p3", "name": "Wireless Mouse ergonomic", "category": "Accessories", "price": 35, "stock": 75, "vendorId": "v1" }
+    ],
+    "users": [
+      { "id": "u1", "username": "john.doe", "email": "john@example.com", "role": "customer", "password": "password123" },
+      { "id": "u2", "username": "vendor.jane", "email": "jane@vendor.com", "role": "vendor", "vendorId": "v1", "password": "password123" },
+      { "id": "u3", "username": "admin.root", "email": "admin@example.com", "role": "admin", "password": "admin123" },
+      { "id": "u4", "username": "vendor.bob", "email": "bob@vendor.com", "role": "vendor", "vendorId": "v2", "password": "password123" }
+    ],
+    "orders": [
+      { "id": "o1", "userId": "u1", "products": [{ "productId": "p1", "quantity": 1 }], "totalAmount": 1250, "status": "Processing", "date": "2023-10-26" },
+      { "id": "o2", "userId": "u1", "products": [{ "productId": "p2", "quantity": 2 }], "totalAmount": 36, "status": "Shipped", "date": "2023-10-25" }
+    ],
+    "admin_tokens": [
+      { "id": "admin-token-xyz", "userId": "u3", "role": "admin"}
+    ],
+    "vendor_tokens": [
+      { "id": "vendor-token-abc", "userId": "u2", "role": "vendor", "vendorId": "v1" },
+      { "id": "vendor-token-def", "userId": "u4", "role": "vendor", "vendorId": "v2" }
+    ]
+  }
